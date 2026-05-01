@@ -22,22 +22,47 @@
       <div class="header__inner d-flex justify-content-between align-items-center">
         <p class="header__logo text-uppercase">logo</p>
         <div class="header__actions d-flex align-items-center">
-          <nav class="header__menu d-flex align-items-center gap-4">
-            <li class="header__menu-item">About</li>
-            <li class="header__menu-item">Portfolio</li>
-            <li class="header__menu-item">Blog</li>
-            <li class="header__menu-item">Contact</li>
+          <nav class="header__nav" aria-label="Основная навигация">
+            <ul class="header__menu d-flex align-items-center gap-4">
+              <li class="header__menu-item">About</li>
+              <li class="header__menu-item">Portfolio</li>
+              <li class="header__menu-item">Blog</li>
+              <li class="header__menu-item">Contact</li>
+            </ul>
           </nav>
           <button class="btn btn-primary header__btn">Sign up</button>
           <button class="header__burger btn-reset" type="button" aria-label="menu">&#9776;</button>
         </div>
       </div>
     </header>
+    <main class="main">
+        <section class="banner">
+            <h1 class="banner__title d-flex justify-content-center text-uppercase text-center">powered media</h1>
+        </section>
+        <section class="about">
+            <div class="container">
+                <div class="about__inner d-flex align-items-center justify-content-between">
+                    <div class="about__media">
+                        <img class="about__img rounded-1" src="shared/img-example.png" alt="img-example">
+                    </div>
+                    <div class="about__content">
+                        <p class="about__tagline text-uppercase">user friendly</p>
+                        <h2 class="about__title h2-title">World Quality</h2>
+                        <p class="about__text">Quidam officiis similique sea ei, vel tollit indoctum efficiendi ei, at nihil tantas platonem eos. Mazim nemore singulis an ius, nullam ornatus nam ei.</p>
+                        <div class="about__links">
+                            <img src="shared/facebook.svg" alt="Facebook">
+                            <img src="shared/twitter.svg" alt="Twitter">
+                            <img src="shared/instagram.svg" alt="Instagram">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
-    <section class="banner">
-        <h1 class="banner__title d-flex justify-content-center text-uppercase text-center">powered media</h1>
-    </section>
 
+
+    <footer class="footer"></footer>
     
 
     <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>

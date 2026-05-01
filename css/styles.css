@@ -7,7 +7,7 @@ body {
   --bg-color: #eee;
 }
 
-p, li {
+p, ul, li {
   margin: 0;
   padding: 0;
   text-align: left;
@@ -24,6 +24,14 @@ p, li {
   cursor: pointer;
   outline: none;
   color: inherit;
+}
+
+.h2-title {
+  margin-bottom: 28px;
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 64px;
+  color: var(--text-color);
 }
 
 /* Header */
@@ -85,3 +93,38 @@ p, li {
   color: var(--text-color);
   line-height: 1;
 }
+
+/* About */
+
+.about {
+  margin-bottom: 140px;
+}
+
+.about__inner {
+  display: flex;
+  align-items: center;
+  gap: 130px;
+}
+
+.about__media,
+.about__content {
+  width: 50%;
+}
+
+.about__tagline {
+  margin-bottom: 22px;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 5px;
+  line-height: 1.5;
+  color: var(--text-color);
+}
+
+.about__text {
+  margin-bottom: 40px;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 32px;
+}
+
+
