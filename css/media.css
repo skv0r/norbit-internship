@@ -48,7 +48,14 @@
     font-size: 56px;
     line-height: 64px;
   }
+
+
+  /* Values */
+  .values__btn {
+    width: 116px;
+    }
 }
+
 
 @media (max-width: 992px) {
 
@@ -74,5 +81,11 @@
     .about__img {
         width: 100%;
         max-width: 100%;
+    }
+
+    /* Values */
+
+    .values__info {
+        flex-direction: column;
     }
 }
