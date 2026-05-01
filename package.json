@@ -1,0 +1,24 @@
+{
+  "name": "norbit-internship",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/skv0r/norbit-internship.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/skv0r/norbit-internship/issues"
+  },
+  "homepage": "https://github.com/skv0r/norbit-internship#readme",
+  "dependencies": {
+    "bootstrap": "^5.3.8"
+  }
+}

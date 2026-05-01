@@ -1,0 +1,87 @@
+body {
+    font-family: "DM Sans", sans-serif;
+  }
+
+:root {
+  --text-color: #333333;
+  --bg-color: #eee;
+}
+
+p, li {
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  text-decoration: none;
+  color: inherit;
+  list-style: none;
+}
+
+.btn-reset {
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+  outline: none;
+  color: inherit;
+}
+
+/* Header */
+
+.header {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.header__logo {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48px;
+}
+
+.header__menu {
+  margin-right: 44px;
+}
+
+.header__menu-item {
+ font-size: 16px;
+ font-weight: 700;
+ line-height: 1.5;
+ color: var(--text-color);
+}
+
+.header__btn {
+  width: 170px;
+  height: 48px;
+  font-size: 16px;
+  line-height: 1.5;   
+  font-weight: 700; 
+  border-radius: 3px; 
+  padding: 12px 54px;
+  white-space: nowrap;
+}
+
+.header__burger {
+  display: none;
+  font-size: 36px;
+  line-height: 1;
+}
+
+
+/* Banner */
+
+.banner {
+  margin-bottom: 110px;
+  padding-top: 344px;
+  padding-bottom: 344px;
+  background-color: var(--bg-color);
+}
+
+.banner__title {
+  margin: 0;
+  padding: 0;
+  font-size: 80px;
+  font-weight: 700;
+  color: var(--text-color);
+  line-height: 1;
+}
