@@ -641,3 +641,30 @@ p, ul, li {
   padding: 12px 41px;
   white-space: nowrap;
 }
+
+/* Footer */
+
+.footer__title {
+  color: var(--text-color);
+}
+
+.footer__link {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #999;
+}
+
+.footer__bottom {
+  background-color: #eee;
+}
+
+.footer__link:hover {
+  color: var(--text-color);
+}
+
+.footer__social-img {
+  display: block;
+  width: 32px;
+  height: 32px;
+}
