@@ -59,7 +59,7 @@ p, ul, li {
 }
 
 .header__btn,
-.about__btn {
+.invite__btn {
   width: 170px;
   height: 48px;
   font-size: 16px;
@@ -134,12 +134,37 @@ p, ul, li {
   margin-bottom: 160px;
 }
 
-.values__text {
+/* Общий текст секций */
+.values__text,
+.portfolio__text,
+.plans__intro,
+.team__text,
+.news__intro-row .news__intro,
+.cta-work__intro {
   max-width: 570px;
   margin-bottom: 40px;
   font-size: 20px;
   font-weight: 400;
   line-height: 32px;
+}
+
+.portfolio__text {
+  width: 100%;
+}
+
+.team__text {
+  margin-bottom: 64px;
+}
+
+.news__intro-row .news__intro {
+  margin-top: 0;
+  margin-bottom: 0;
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.cta-work__intro {
+  margin-bottom: 0;
 }
 
 .values__btn {
@@ -158,13 +183,15 @@ p, ul, li {
 }
 
 .values__btn:hover,
-.values__btn:focus-visible {
+.values__btn:focus-visible,
+.portfolio__filter-btn:hover,
+.portfolio__filter-btn:focus-visible {
   background-color: #0d6efd !important;
   border-color: #0d6efd !important;
   color: #fff !important;
 }
 
-.values__postfix__title {
+.values__postfix-title {
   margin-bottom: 24px;
   font-size: 24px;
   font-weight: 700;
@@ -173,7 +200,7 @@ p, ul, li {
   color: var(--text-color);
 }
 
-.values__postfix__text {
+.values__postfix-text {
   max-width: 570px;
   font-size: 16px;
   font-weight: 400;
@@ -193,7 +220,6 @@ p, ul, li {
 
 .portfolio__text {
   width: 100%;
-  margin-bottom: 40px;
 }
 
 .portfolio__filters {
@@ -204,13 +230,6 @@ p, ul, li {
   width: 130px;
   height: 48px;
   border-color: #dee2e6 !important;
-}
-
-.portfolio__filter-btn:hover,
-.portfolio__filter-btn:focus-visible {
-  background-color: #0d6efd !important;
-  border-color: #0d6efd !important;
-  color: #fff !important;
 }
 
 .portfolio__columns {
@@ -234,11 +253,13 @@ p, ul, li {
   display: block;
 }
 
-.portfolio__image--1 {
+.portfolio__image--1,
+.portfolio__image--6 {
   aspect-ratio: 370 / 448;
 }
 
-.portfolio__image--2 {
+.portfolio__image--2,
+.portfolio__image--5 {
   aspect-ratio: 370 / 352;
 }
 
@@ -248,14 +269,6 @@ p, ul, li {
 
 .portfolio__image--4 {
   aspect-ratio: 370 / 608;
-}
-
-.portfolio__image--5 {
-  aspect-ratio: 370 / 352;
-}
-
-.portfolio__image--6 {
-  aspect-ratio: 370 / 448;
 }
 
 .portfolio__work-btn {
@@ -285,10 +298,6 @@ p, ul, li {
 
 .team__title {
   margin-bottom: 28px;
-}
-
-.team__text {
-  margin-bottom: 64px;
 }
 
 .team__img {
@@ -435,10 +444,6 @@ p, ul, li {
   margin-bottom: 150px;
 }
 
-.plans__intro {
-  margin-bottom: 40px;
-}
-
 .plans__card {
   width: 370px;
   max-width: 370px;
@@ -448,7 +453,7 @@ p, ul, li {
   text-align: center;
 }
 
-.plans__card .card-body {
+.plans__card .plans__body {
   min-height: 100%;
   height: 100%;
 }
@@ -533,13 +538,6 @@ p, ul, li {
   align-items: flex-start;
   gap: 24px;
   margin-top: 28px;
-}
-
-.news__intro-row .news__intro {
-  flex: 1 1 auto;
-  min-width: 0;
-  margin-top: 0;
-  margin-bottom: 0;
 }
 
 .news__top-btn {
@@ -629,10 +627,6 @@ p, ul, li {
   margin-bottom: 0;
 }
 
-.cta-work__intro.values__text {
-  margin-bottom: 0;
-}
-
 .cta-work__btn {
   font-size: 16px;
   line-height: 1.5;   
@@ -645,7 +639,21 @@ p, ul, li {
 /* Footer */
 
 .footer__title {
+  margin: 0 0 24px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.5;
+  text-align: left;
   color: var(--text-color);
+}
+
+.footer__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
 
 .footer__link {
@@ -653,6 +661,7 @@ p, ul, li {
   font-weight: 400;
   line-height: 1.5;
   color: #999;
+  text-decoration: none;
 }
 
 .footer__bottom {
@@ -661,6 +670,12 @@ p, ul, li {
 
 .footer__link:hover {
   color: var(--text-color);
+}
+
+.footer__social-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .footer__social-img {

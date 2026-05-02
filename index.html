@@ -15,7 +15,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/styles.css" />
-    <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="css/media.css" />
   </head>
   <body>
     <header class="header container">
@@ -80,8 +80,8 @@
                 <div class="values__info d-flex justify-content-between">
                     <img src="shared/gadgets.png" alt="gadgets">
                     <div class="values__postfix d-flex flex-column justify-content-center">
-                        <h3 class="values__postfix__title text-start">Commercial & Personal Use</h3>
-                        <p class="values__postfix__text">Quidam officiis similique sea ei, vel tollit indoctum efficiendi ei, at nihil tantas platonem eos. Mazim nemore singulis an ius, nullam ornatus nam ei. Dicat euismod invidunt pro, ne his dolorum molestie reprehendunt, quo luptatum evertitur ex. Altera integre suavitate per an, alienum phaedrum te sea. </p>
+                        <h3 class="values__postfix-title text-start">Commercial & Personal Use</h3>
+                        <p class="values__postfix-text">Quidam officiis similique sea ei, vel tollit indoctum efficiendi ei, at nihil tantas platonem eos. Mazim nemore singulis an ius, nullam ornatus nam ei. Dicat euismod invidunt pro, ne his dolorum molestie reprehendunt, quo luptatum evertitur ex. Altera integre suavitate per an, alienum phaedrum te sea. </p>
                     </div>
                 </div>
 
@@ -91,7 +91,7 @@
         <section class="portfolio">
             <div class="container">
                 <h2 class="portfolio__title h2-title">Portfolio</h2>
-                <p class="values__text portfolio__text">Quidam officiis similique sea ei, vel tollit indoctum efficiendi ei, at nihil tantas platonem eos.</p>
+                <p class="portfolio__text">Quidam officiis similique sea ei, vel tollit indoctum efficiendi ei, at nihil tantas platonem eos.</p>
 
                 <div class="portfolio__filters btn-group" role="group" aria-label="Portfolio categories">
                     <button type="button" class="portfolio__filter-btn btn btn-primary border">All</button>
@@ -123,14 +123,14 @@
         <section class="invite container">
             <div class="invite__inner d-flex justify-content-between align-items-center rounded-2">
                 <h2 class="invite__title h2-title">Let’s work together</h2>
-                <button class="btn btn-primary header__btn">Sign up</button>
+                <button type="button" class="btn btn-primary invite__btn">Sign up</button>
             </div>
         </section>
 
         <section class="team">
             <div class="container d-flex flex-column align-items-center text-center">
                 <h2 class="team__title h2-title">Our Team</h2>
-                <p class="team__text values__text mx-auto text-center">Quidam officiis similique sea ei, vel tollit indoctum efficiendi ei, at nihil tantas platonem eos. </p>
+                <p class="team__text mx-auto text-center">Quidam officiis similique sea ei, vel tollit indoctum efficiendi ei, at nihil tantas platonem eos. </p>
                 <img class="team__img rounded-circle d-block mx-auto" src="shared/person_icon.png" alt="Sebastian Bennett">
                 <h3 class="team__name">Sebastian Bennett</h3>
                 <span class="team__role">Founder</span>
@@ -190,13 +190,13 @@
         <section class="plans">
             <div class="container">
                 <h2 class="plans__title h2-title text-center">Our plans</h2>
-                <p class="plans__intro values__text mx-auto text-center">
+                <p class="plans__intro mx-auto text-center">
                     Quidam officiis similique sea ei, vel tollit indoctum efficiendi ei, at nihil tantas platonem eos.
                 </p>
                 <div class="row row-cols-1 row-cols-lg-3 g-4 justify-content-center">
                     <div class="col d-flex justify-content-center">
                         <article class="plans__card card border rounded-3 h-100 text-center">
-                            <div class="card-body d-flex flex-column align-items-center px-4 py-4 py-lg-5">
+                            <div class="card-body plans__body d-flex flex-column align-items-center px-4 py-4 py-lg-5">
                                 <h3 class="plans__name">Simple plan</h3>
                                 <p class="plans__price">$9</p>
                                 <ul class="plans__features list-unstyled">
@@ -212,7 +212,7 @@
                     </div>
                     <div class="col d-flex justify-content-center">
                         <article class="plans__card plans__card--featured card border-0 rounded-3 h-100 text-center bg-primary text-white">
-                            <div class="card-body d-flex flex-column align-items-center px-4 py-4 py-lg-5">
+                            <div class="card-body plans__body d-flex flex-column align-items-center px-4 py-4 py-lg-5">
                                 <h3 class="plans__name plans__name--light">Professional plan</h3>
                                 <p class="plans__price plans__price--light">$24</p>
                                 <ul class="plans__features plans__features--light list-unstyled">
@@ -228,7 +228,7 @@
                     </div>
                     <div class="col d-flex justify-content-center">
                         <article class="plans__card card border rounded-3 h-100 text-center">
-                            <div class="card-body d-flex flex-column align-items-center px-4 py-4 py-lg-5">
+                            <div class="card-body plans__body d-flex flex-column align-items-center px-4 py-4 py-lg-5">
                                 <h3 class="plans__name">Enterprise</h3>
                                 <p class="plans__price">$99</p>
                                 <ul class="plans__features list-unstyled">
@@ -251,7 +251,7 @@
                 <div class="news__head">
                     <h2 class="news__title h2-title">Last news</h2>
                     <div class="news__intro-row">
-                        <p class="news__intro values__text">
+                        <p class="news__intro">
                             Quidam officiis similique sea ei, vel tollit indoctum efficiendi ei, at nihil tantas platonem eos.
                         </p>
                         <button type="button" class="btn btn-outline-primary news__top-btn news__top-btn--desktop">Our News</button>
@@ -294,7 +294,7 @@
                 <div class="cta-work__inner">
                     <div class="cta-work__text">
                         <h2 class="cta-work__title h2-title">Work with us</h2>
-                        <p class="cta-work__intro values__text">
+                        <p class="cta-work__intro">
                             Quidam officiis similique sea ei, vel tollit indoctum efficiendi ei, at nihil tantas platonem eos.
                         </p>
                     </div>
@@ -313,42 +313,42 @@
         <div class="container">
           <div class="row row-cols-1 row-cols-lg-4 g-4">
             <div class="col">
-              <nav class="text-start" aria-labelledby="footer-heading-about">
-                <h3 id="footer-heading-about" class="footer__title fs-6 fw-bold mb-4 lh-base text-start">About</h3>
-                <ul class="list-unstyled vstack gap-3 mb-0">
-                  <li><a class="footer__link text-decoration-none" href="#">Team</a></li>
-                  <li><a class="footer__link text-decoration-none" href="#">Portfolio</a></li>
-                  <li><a class="footer__link text-decoration-none" href="#">News</a></li>
+              <nav class="footer__nav text-start" aria-labelledby="footer-heading-about">
+                <h3 id="footer-heading-about" class="footer__title">About</h3>
+                <ul class="footer__list">
+                  <li><a class="footer__link" href="#">Team</a></li>
+                  <li><a class="footer__link" href="#">Portfolio</a></li>
+                  <li><a class="footer__link" href="#">News</a></li>
                 </ul>
               </nav>
             </div>
             <div class="col">
-              <nav class="text-start" aria-labelledby="footer-heading-service">
-                <h3 id="footer-heading-service" class="footer__title fs-6 fw-bold mb-4 lh-base text-start">Service</h3>
-                <ul class="list-unstyled vstack gap-3 mb-0">
-                  <li><a class="footer__link text-decoration-none" href="#">Design</a></li>
-                  <li><a class="footer__link text-decoration-none" href="#">Social media</a></li>
-                  <li><a class="footer__link text-decoration-none" href="#">Develop</a></li>
+              <nav class="footer__nav text-start" aria-labelledby="footer-heading-service">
+                <h3 id="footer-heading-service" class="footer__title">Service</h3>
+                <ul class="footer__list">
+                  <li><a class="footer__link" href="#">Design</a></li>
+                  <li><a class="footer__link" href="#">Social media</a></li>
+                  <li><a class="footer__link" href="#">Develop</a></li>
                 </ul>
               </nav>
             </div>
             <div class="col">
-              <nav class="text-start" aria-labelledby="footer-heading-information">
-                <h3 id="footer-heading-information" class="footer__title fs-6 fw-bold mb-4 lh-base text-start">Information</h3>
-                <ul class="list-unstyled vstack gap-3 mb-0">
-                  <li><a class="footer__link text-decoration-none" href="#">Blog</a></li>
-                  <li><a class="footer__link text-decoration-none" href="#">News</a></li>
-                  <li><a class="footer__link text-decoration-none" href="#">About</a></li>
+              <nav class="footer__nav text-start" aria-labelledby="footer-heading-information">
+                <h3 id="footer-heading-information" class="footer__title">Information</h3>
+                <ul class="footer__list">
+                  <li><a class="footer__link" href="#">Blog</a></li>
+                  <li><a class="footer__link" href="#">News</a></li>
+                  <li><a class="footer__link" href="#">About</a></li>
                 </ul>
               </nav>
             </div>
             <div class="col">
-              <nav class="text-start" aria-labelledby="footer-heading-contact">
-                <h3 id="footer-heading-contact" class="footer__title fs-6 fw-bold mb-4 lh-base text-start">Contact</h3>
-                <ul class="list-unstyled vstack gap-3 mb-0">
-                  <li><a class="footer__link text-decoration-none" href="#">Write to us</a></li>
-                  <li><a class="footer__link text-decoration-none" href="#">Call to us</a></li>
-                  <li><a class="footer__link text-decoration-none" href="#">Information</a></li>
+              <nav class="footer__nav text-start" aria-labelledby="footer-heading-contact">
+                <h3 id="footer-heading-contact" class="footer__title">Contact</h3>
+                <ul class="footer__list">
+                  <li><a class="footer__link" href="#">Write to us</a></li>
+                  <li><a class="footer__link" href="#">Call to us</a></li>
+                  <li><a class="footer__link" href="#">Information</a></li>
                 </ul>
               </nav>
             </div>
@@ -357,20 +357,20 @@
       </div>
       <div class="footer__bottom py-4">
         <div class="container text-center">
-          <p class="footer__copy fs-6 text-muted mb-4 mb-md-3 text-center">© Copyright 2019. Laaqiq All Right Reserved</p>
-          <ul class="list-unstyled d-flex justify-content-center align-items-center gap-3 flex-wrap mb-0" aria-label="Соцсети">
+          <p class="footer__copy fs-6 text-muted mb-4 mb-md-3">© Copyright 2019. Laaqiq All Right Reserved</p>
+          <ul class="footer__social-list list-unstyled d-flex justify-content-center align-items-center gap-3 flex-wrap mb-0" aria-label="Соцсети">
             <li>
-              <a class="d-inline-flex footer__social-link" href="#" aria-label="Facebook">
+              <a class="footer__social-link" href="#" aria-label="Facebook">
                 <img class="footer__social-img" src="shared/facebook.svg" width="32" height="32" alt="" />
               </a>
             </li>
             <li>
-              <a class="d-inline-flex footer__social-link" href="#" aria-label="Twitter">
+              <a class="footer__social-link" href="#" aria-label="Twitter">
                 <img class="footer__social-img" src="shared/twitter.svg" width="32" height="32" alt="" />
               </a>
             </li>
             <li>
-              <a class="d-inline-flex footer__social-link" href="#" aria-label="Instagram">
+              <a class="footer__social-link" href="#" aria-label="Instagram">
                 <img class="footer__social-img" src="shared/instagram.svg" width="32" height="32" alt="" />
               </a>
             </li>
