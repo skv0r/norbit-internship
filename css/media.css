@@ -61,6 +61,14 @@
     margin-bottom: 140px;
   }
 
+  .news {
+    margin-bottom: 80px;
+  }
+
+  .cta-work {
+    margin-bottom: 100px;
+  }
+
   .invite__inner {
     padding: 64px 75px;
     text-align: center;
@@ -75,6 +83,55 @@
 
 
 @media (max-width: 992px) {
+
+    /* Plans */
+    .plans__card {
+      width: 100%;
+      max-width: 370px;
+    }
+
+    /* Last news */
+    .news__intro-row {
+      flex-direction: column;
+      align-items: stretch;
+      gap: 0;
+    }
+
+    .news__top-btn--desktop {
+      display: none;
+    }
+
+    .news__actions {
+      display: flex;
+    }
+
+    .news__grid {
+      display: flex;
+      flex-wrap: nowrap;
+      gap: 16px;
+      overflow-x: auto;
+      overflow-y: visible;
+      scroll-snap-type: x mandatory;
+      padding-bottom: 8px;
+      -webkit-overflow-scrolling: touch;
+    }
+
+    .news__grid .news__card {
+      flex: 0 0 85%;
+      scroll-snap-align: start;
+      min-width: 0;
+    }
+
+    /* Work with us */
+    .cta-work__inner {
+      flex-direction: column;
+      align-items: center;
+      gap: 24px;
+    }
+
+    .cta-work__text {
+      max-width: none;
+    }
 
     /* About */
 
