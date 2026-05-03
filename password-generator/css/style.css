@@ -41,8 +41,74 @@ body {
     background-color: blue;
     border: 1px solid white;
     border-radius: 4px;
+    transition: background-color 0.25s ease, border-color 0.25s ease, transform 0.2s ease;
 }
 
-.button:not(:last-child) {
-    margin-bottom: 4px;
+.actions {
+    display: flex;
+    justify-content: space-between;
+}
+
+.settings {
+    padding: 0px 16px;
+    color: white;
+    background-color: blue;
+    border: 1px solid white;
+    border-radius: 4px;
+}
+
+.gear {
+    display: block;
+    transition: transform 1s ease;
+    transform-origin: center;
+}
+
+.settings:hover .gear {
+    transform: rotate(180deg);
+}
+
+.button:hover {
+    background-color: #eee;
+    color: #333;
+    border-color: #7c3aed;
+}
+
+.decline {
+    background-color: red !important;
+}
+
+/* Modal */
+
+.modal[open] {
+    max-width: 570px;
+    border: 1px solid blue;
+    border-radius: 10px;
+}
+
+.modal::backdrop {
+    background: rgba(15, 23, 42, 0.7);
+    backdrop-filter: blur(2px);
+}
+
+.modal h2 {
+    margin: 0;
+}
+
+.modal form {
+    display: flex;
+    flex-direction: column;
+}
+
+.modal label input {
+    margin-bottom: 10px;
+}
+
+.modal button {
+    padding: 4px 16px;
+    font-size: 12px;
+    font-weight: 400;
+    color: white;
+    background-color: blue;
+    border: 1px solid white;
+    border-radius: 4px;
 }
