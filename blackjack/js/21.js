@@ -8,7 +8,7 @@ let state = {
     dealerCards: [],
     bet: 20,
     bank: 1000,
-    isRoundActive: false;
+    isRoundActive: false
 }
 
 let card = {
@@ -17,7 +17,7 @@ let card = {
     value: Number
 }
 
-function createDeck() {
+export function createDeck() {
     const deck = [];
 
     for (let i = 0; i < rank.length ;i++) {
@@ -37,7 +37,7 @@ function createDeck() {
     return deck
 }
 
-function shuffleDeck(deck) {
+export function shuffleDeck(deck) {
     for (let i = 0; i < deck.length ; i++ ) {
         const j = Math.floor(Math.random() * (i + 1));
         [deck[i], deck[j]] = [deck[j], deck[i]] 
@@ -46,7 +46,7 @@ function shuffleDeck(deck) {
     return deck;
 }
 
-function renderCard(card) {
+export function renderCard(card) {
     return `
     <div class="card">
         <span class="card-corner card-corner--top">${card.rank}</span>
@@ -56,12 +56,9 @@ function renderCard(card) {
     `
 }
 
-function getHandValue(hand) {
-    const handValue = hand.reduce((sum, cardValue) => {
-        sum + card.value, 0; //переписать чтобы считало туз позже
-    });
-    return handValue;
-}
+export function getHandValue(hand) {
+    return hand.reduce((sum, card) => sum + card.value, 0);
+  }
 
 function render() {
 }
