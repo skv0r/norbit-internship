@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlackJack 21</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <main class="main">
+        <div class="container">
+            <div class="playground">
+                <div class="bet">
+                    <label class="bet-text">
+                        Ваша ставка:
+                        <input class="bet-input"
+                            type="number"
+                            id="bet"
+                            name="bet"
+                            min="1" max="1000"
+                            value="20"
+                        />
+                    </label>
+                </div>
+                <div class="dealer">
+                    <span class="dealer-text">Карты дилера: </span>
+                    <div class="dealer__cards">
+                        <div class="card card--spades">
+                            <span class="card-corner card-corner--top">J</span>
+                            <span class="card-suit">♠</span>
+                            <span class="card-corner card-corner--bottom">J</span>
+                        </div>
+                        
+                    </div>
+                    <span class="dealer__points">Очки: </span>
+                </div>
+                <div class="information">
+                    <span class="score">Ваш счет:</span>
+                    <span class="player-bet" id="bet-info">Ваша ставка: </span>
+                </div>
+                <div class="player">
+                    <span class="player-text">Ваши карты:</span>
+                    <div class="player__cards"></div>
+                    <span class="player__points">Очки: </span>
+                </div>
+                <div class="actions">
+                    <button class="action-button" id="take">Раздать</button>
+                    <button class="action-button" id="double" disabled>Удвоить</button>
+                    <button class="action-button" id="more" disabled>Еще</button>
+                    <button class="action-button" id="end" disabled>Хватит</button>
+                </div>
+                <span class="result" id="result"></span>
+            </div>
+        </div>
+    </main>
+    <script src="js/index.js"></script>
+</body>
+</html>
