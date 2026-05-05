@@ -42,7 +42,7 @@ body {
     margin-right: auto;
 }
 
-.dealer-text {
+.dealer-text, .player-text {
     margin-right: 8px;
 }
 
