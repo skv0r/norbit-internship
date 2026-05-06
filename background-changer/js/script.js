@@ -8,6 +8,7 @@ function getRandomColor() {
 function setNewBackground() {
     color = getRandomColor();
     document.body.style.backgroundColor = color;
+    
 }
 
 function setNewTextColor() {
