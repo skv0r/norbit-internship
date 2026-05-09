@@ -7,10 +7,32 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    
-
-
-
+    <main class="main">
+        <div class="container">
+            <div class="actions">
+                <form action="" class="form">
+                    <div class="wrapper">
+                        <input type="text" class="form__input" placeholder="Название ">
+                        <button type="submit" class="form__submit">+</button>
+                    </div>
+                    <select class="form__filter">
+                        <option value="active">Активные</option>
+                        <option value="completed">Завершенные</option>
+                        <option value="deleted">Удаленные</option>
+                    </select>
+                </form>
+            </div>
+            <div class="tasks-list">
+                <div class="task">
+                    <p class="task-text">task</p>
+                    <div class="task-btns">
+                        <button class="btn">🗑️</button>
+                        <button class="btn">✅</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
     <script type="module" src="js/index.js"></script>
 </body>
 </html>
