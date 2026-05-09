@@ -72,6 +72,16 @@ body {
     appearance: none;
 }
 
+.form__filter:focus-visible {
+    border: none;
+    
+}
+
+.form__filter-option {
+    background-color: white;
+    color: black;
+}
+
 .tasks-list {
     display: flex;
     flex-direction: column;
