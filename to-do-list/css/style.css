@@ -1,112 +1,178 @@
 body {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+    margin: 0;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
-.container {
+/* Блок todo */
+.todo {
+    display: block;
+}
+
+.todo__container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 15px;
-    
 }
 
-.actions {
+.todo__toolbar {
+    display: flex;
+    align-items: stretch;
+    gap: 10px;
     margin-bottom: 8px;
 }
 
-.form {
+.todo__form {
     display: flex;
-    gap: 10px;
-    align-items: stretch;
+    flex: 1;
 }
 
-.wrapper {
+.todo__field {
+    position: relative;
     display: flex;
     align-items: center;
-    position: relative;
-    background-color: #fff;
+    flex-grow: 1;
+    max-width: 400px;
+    padding: 8px 6px;
     border: 1px solid #e3e3e3;
     border-radius: 6px;
-    padding: 8px 6px;
-    flex-grow: 1;
-  max-width: 400px;
+    background-color: #fff;
 }
 
-.form__input {
+.todo__input {
+    width: 100%;
+    padding: 0;
     border: none;
     outline: none;
-    padding: 0;
-    width: 100%;
     font-size: 16px;
 }
 
-.form__submit {
-    background-color: #76a04d;
-    color: white;
-    border: none;
-
-    width: 20px;
-    height: 20px;
-    min-width: 20px;
-
-    font-size: 20px;
-    cursor: pointer;
+.todo__submit {
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 20px;
+    min-width: 20px;
+    height: 20px;
+    padding: 0;
+    border: none;
+    font-size: 20px;
+    color: #fff;
+    background-color: #76a04d;
+    cursor: pointer;
 }
 
-.form__filter {
-    font-size: 16px;
-    background-color: #94bc66;
-    color: white;
+.todo__filter {
+    padding: 0 32px 0 15px;
     border: none;
     border-radius: 6px;
-    padding: 0 15px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #94bc66;
+    background-image: url("../shared/select.svg");
+    background-repeat: no-repeat;
+    background-position: calc(100% - 14px) 50%;
+    background-size: 12px 6px;
     cursor: pointer;
-
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
 }
 
-.form__filter:focus-visible {
-    border: none;
-    
+.todo__filter:focus,
+.todo__filter:focus-visible {
+    outline: none;
 }
 
-.form__filter-option {
-    background-color: white;
-    color: black;
-}
-
-.tasks-list {
+.todo__tasks {
     display: flex;
     flex-direction: column;
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
 
-.task {
+.todo__task {
     display: flex;
     align-items: center;
-    padding: 6px 6px;
+    min-height: 24px;
+    padding: 6px;
     background-color: #efefef;
 }
 
-.task-text {
-    margin: 0;
-    padding: 0;
-    margin-right: auto;
+.todo__task:not(:last-child) {
+    margin-bottom: 4px;
 }
 
-.task-btns {
+.todo__task-text {
+    margin: 0;
+    margin-right: auto;
+    padding: 0;
+    font-size: 12px;
+}
+
+.todo__task-actions {
+    display: none;
+    gap: 4px;
+}
+
+.todo__task:hover .todo__task-actions {
     display: flex;
 }
 
-.btn {
-    padding: 0;
-    margin: 0;
+.todo__btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     width: 24px;
     height: 24px;
+    margin: 0;
+    padding: 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.todo__btn--del {
+    background-color: rgb(254, 70, 70);
+}
+
+.todo__btn--approve {
+    background-color: rgb(140, 211, 33);
+}
+
+.todo__btn--restore {
+    background-color: aqua;
+}
+
+/* Модификаторы */
+.todo__task--active .todo__task-text {
+    color: #000;
+}
+
+.todo__task--active .todo__btn--restore {
+    display: none;
+}
+
+.todo__task--completed {
+    background-color: rgb(201, 232, 201);
+}
+
+.todo__task--completed .todo__task-text {
+    text-decoration: line-through;
+}
+
+.todo__task--completed .todo__btn--approve {
+    display: none;
+}
+
+.todo__task--deleted {
+    color: #cecece;
+    background-color: #eceaea;
+}
+
+.todo__task--deleted .todo__btn--approve {
+    display: none;
 }

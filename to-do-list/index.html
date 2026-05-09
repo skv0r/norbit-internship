@@ -7,30 +7,22 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <main class="main">
-        <div class="container">
-            <div class="actions">
-                <form action="" class="form">
-                    <div class="wrapper">
-                        <input type="text" class="form__input" placeholder="Название ">
-                        <button type="submit" class="form__submit">+</button>
+    <main class="todo">
+        <div class="todo__container">
+            <div class="todo__toolbar">
+                <form class="todo__form" id="todo-form" action="#" method="post">
+                    <div class="todo__field">
+                        <input type="text" class="todo__input" name="title" placeholder="Название" autocomplete="off">
+                        <button type="submit" class="todo__submit" aria-label="Добавить задачу">+</button>
                     </div>
-                    <select class="form__filter">
-                        <option class="form__filter-option" value="active">Активные</option>
-                        <option class="form__filter-option" value="completed">Завершенные</option>
-                        <option class="form__filter-option" value="deleted">Удаленные</option>
-                    </select>
                 </form>
+                <select class="todo__filter" name="filter" aria-label="Показать задачи">
+                    <option value="active">Активные</option>
+                    <option value="completed">Завершенные</option>
+                    <option value="deleted">Удаленные</option>
+                </select>
             </div>
-            <div class="tasks-list">
-                <div class="task">
-                    <p class="task-text">task</p>
-                    <div class="task-btns">
-                        <button class="btn">🗑️</button>
-                        <button class="btn">✅</button>
-                    </div>
-                </div>
-            </div>
+            <ul class="todo__tasks" role="list"></ul>
         </div>
     </main>
     <script type="module" src="js/index.js"></script>
